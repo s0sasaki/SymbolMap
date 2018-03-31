@@ -1,91 +1,91 @@
                         Memory Maps                             |     Segment     |           Section           |           Symbol          
 ----------------------------------------------------------------|-----------------|-----------------------------|---------------------------
-       Address       Perm   Size             PathName           | FileSize   Type | FileSize     SectionName    |         SymbolName        
--------------------- ---- ------- ------------------------------|--------- -------|--------- -------------------|---------------------------
-             4194304 r-xp 4042752 /home/u...lloc/symbolmap/hello----------------------------------------------------------------------------
-                     r-xp         /home/u...lloc/symbolmap/hello|      504    PHDR----------------------------------------------------------
-                     r-xp         /home/u...lloc/symbolmap/hello|       28  INTERP----------------------------------------------------------
-                     r-xp         /home/u...lloc/symbolmap/hello|  4042484    LOAD----------------------------------------------------------
-                     r-xp         /home/u...lloc/symbolmap/hello|             LOAD|       28             .interp----------------------------
-                     r-xp         /home/u...lloc/symbolmap/hello|             LOAD|       32       .note.ABI-tag----------------------------
-                     r-xp         /home/u...lloc/symbolmap/hello|             LOAD|       36  .note.gnu.build-id----------------------------
-                     r-xp         /home/u...lloc/symbolmap/hello|             LOAD|       28           .gnu.hash----------------------------
-                     r-xp         /home/u...lloc/symbolmap/hello|             LOAD|      192             .dynsym----------------------------
-                     r-xp         /home/u...lloc/symbolmap/hello|             LOAD|      108             .dynstr----------------------------
-                     r-xp         /home/u...lloc/symbolmap/hello|             LOAD|       16        .gnu.version----------------------------
-                     r-xp         /home/u...lloc/symbolmap/hello|             LOAD|       48      .gnu.version_r----------------------------
-                     r-xp         /home/u...lloc/symbolmap/hello|             LOAD|       24           .rela.dyn----------------------------
-                     r-xp         /home/u...lloc/symbolmap/hello|             LOAD|      168           .rela.plt----------------------------
-                     r-xp         /home/u...lloc/symbolmap/hello|             LOAD|       26               .init----------------------------
-                     r-xp         /home/u...lloc/symbolmap/hello|             LOAD|                             |        0 _init
-                     r-xp         /home/u...lloc/symbolmap/hello|             LOAD|      128                .plt----------------------------
-                     r-xp         /home/u...lloc/symbolmap/hello|             LOAD|      594               .text----------------------------
-                     r-xp         /home/u...lloc/symbolmap/hello|             LOAD|                             |        0 deregister_tm_clo
-                     r-xp         /home/u...lloc/symbolmap/hello|             LOAD|                             |        0 register_tm_clone
-                     r-xp         /home/u...lloc/symbolmap/hello|             LOAD|                             |        0 __do_global_dtors
-                     r-xp         /home/u...lloc/symbolmap/hello|             LOAD|                             |        0 frame_dummy
-                     r-xp         /home/u...lloc/symbolmap/hello|             LOAD|                             |        2 __libc_csu_fini
-                     r-xp         /home/u...lloc/symbolmap/hello|             LOAD|                             |      101 __libc_csu_init
-                     r-xp         /home/u...lloc/symbolmap/hello|             LOAD|                             |        0 _start
-                     r-xp         /home/u...lloc/symbolmap/hello|             LOAD|                             |      217 main
-                     r-xp         /home/u...lloc/symbolmap/hello|             LOAD|                             |       15 global_func
-                     r-xp         /home/u...lloc/symbolmap/hello|             LOAD|        9               .fini----------------------------
-                     r-xp         /home/u...lloc/symbolmap/hello|             LOAD|                             |        0 _fini
-                     r-xp         /home/u...lloc/symbolmap/hello|             LOAD|  4040096             .rodata----------------------------
-                     r-xp         /home/u...lloc/symbolmap/hello|             LOAD|                             |    40000 local_const_arr.2
-                     r-xp         /home/u...lloc/symbolmap/hello|             LOAD|                             |        4 _IO_stdin_used
-                     r-xp         /home/u...lloc/symbolmap/hello|             LOAD|                             |  4000000 global_const_arr
-                     r-xp         /home/u...lloc/symbolmap/hello|             LOAD|                             |        4 global_const_val
-                     r-xp         /home/u...lloc/symbolmap/hello|             LOAD|       60       .eh_frame_hdr----------------------------
-                     r-xp         /home/u...lloc/symbolmap/hello|             LOAD|      276           .eh_frame----------------------------
-                     r-xp         /home/u...lloc/symbolmap/hello|             LOAD|                             |        0 __FRAME_END__
-            10334208 r--p    4096 /home/u...lloc/symbolmap/hello----------------------------------------------------------------------------
-                     r--p         /home/u...lloc/symbolmap/hello|  8004752    LOAD----------------------------------------------------------
-                     r--p         /home/u...lloc/symbolmap/hello|             LOAD|        8         .init_array----------------------------
-                     r--p         /home/u...lloc/symbolmap/hello|             LOAD|                             |        0 __frame_dummy_ini
-                     r--p         /home/u...lloc/symbolmap/hello|             LOAD|                             |        0 __init_array_end
-                     r--p         /home/u...lloc/symbolmap/hello|             LOAD|                             |        0 __init_array_star
-                     r--p         /home/u...lloc/symbolmap/hello|             LOAD|        8         .fini_array----------------------------
-                     r--p         /home/u...lloc/symbolmap/hello|             LOAD|                             |        0 __do_global_dtors
-                     r--p         /home/u...lloc/symbolmap/hello|             LOAD|        8                .jcr----------------------------
-                     r--p         /home/u...lloc/symbolmap/hello|             LOAD|                             |        0 __JCR_LIST__
-                     r--p         /home/u...lloc/symbolmap/hello|             LOAD|                             |        0 __JCR_END__
-                     r--p         /home/u...lloc/symbolmap/hello|      464 DYNAMIC----------------------------------------------------------
-                     r--p         /home/u...lloc/symbolmap/hello|          DYNAMIC|      464            .dynamic----------------------------
-                     r--p         /home/u...lloc/symbolmap/hello|          DYNAMIC|                             |        0 _DYNAMIC
-                     r--p         /home/u...lloc/symbolmap/hello|          DYNAMIC|        8                .got----------------------------
-            10338304 rw-p    8192 /home/u...lloc/symbolmap/hello----------------------------------------------------------------------------
-                     rw-p         /home/u...lloc/symbolmap/hello|             LOAD|       80            .got.plt----------------------------
-                     rw-p         /home/u...lloc/symbolmap/hello|             LOAD|                             |        0 _GLOBAL_OFFSET_TA
-                     rw-p         /home/u...lloc/symbolmap/hello|             LOAD|     4088               .data----------------------------
-                     rw-p         /home/u...lloc/symbolmap/hello|             LOAD|                             |       16 global_char_arr
-                     rw-p         /home/u...lloc/symbolmap/hello|             LOAD|                             |        0 data_start
-                     rw-p         /home/u...lloc/symbolmap/hello|             LOAD|                             |        0 _edata
-                     rw-p         /home/u...lloc/symbolmap/hello|             LOAD|                             |        4 global_val
-                     rw-p         /home/u...lloc/symbolmap/hello|             LOAD|                             |        8 global_char_p
-                     rw-p         /home/u...lloc/symbolmap/hello|             LOAD|                             |        0 __data_start
-                     rw-p         /home/u...lloc/symbolmap/hello|             LOAD|                             |     4000 global_arr
-                     rw-p         /home/u...lloc/symbolmap/hello|             LOAD|                             |        0 __dso_handle
-                     rw-p         /home/u...lloc/symbolmap/hello|             LOAD|                             |        0 __TMC_END__
-                     rw-p         /home/u...lloc/symbolmap/hello|             LOAD|  8000064                .bss----------------------------
-                     rw-p         /home/u...lloc/symbolmap/hello|             LOAD|                             |        1 completed.6973
-                     rw-p         /home/u...lloc/symbolmap/hello|             LOAD|                             |        4 global_empty_val
-                     rw-p         /home/u...lloc/symbolmap/hello|             LOAD|                             |        0 _end
-                     rw-p         /home/u...lloc/symbolmap/hello|             LOAD|                             |        0 __bss_start
-                     rw-p         /home/u...lloc/symbolmap/hello|             LOAD|                             |  8000000 global_empty_arr
+       Address       Perm   Size             PathName           | FileSize   Type | FileSize     SectionName    | FileSize     SymbolName   
+-------------------- ---- ------- ------------------------------|--------- -------|--------- -------------------|--------- -----------------
+             4194304 r-xp 4042752 /tmp/SymbolMap/hello          ----------------------------------------------------------------------------
+                     r-xp                                       |      504    PHDR----------------------------------------------------------
+                     r-xp                                       |       28  INTERP----------------------------------------------------------
+                     r-xp                                       |  4042484    LOAD----------------------------------------------------------
+                     r-xp                                       |                 |       28             .interp----------------------------
+                     r-xp                                       |                 |       32       .note.ABI-tag----------------------------
+                     r-xp                                       |                 |       36  .note.gnu.build-id----------------------------
+                     r-xp                                       |                 |       28           .gnu.hash----------------------------
+                     r-xp                                       |                 |      192             .dynsym----------------------------
+                     r-xp                                       |                 |      108             .dynstr----------------------------
+                     r-xp                                       |                 |       16        .gnu.version----------------------------
+                     r-xp                                       |                 |       48      .gnu.version_r----------------------------
+                     r-xp                                       |                 |       24           .rela.dyn----------------------------
+                     r-xp                                       |                 |      168           .rela.plt----------------------------
+                     r-xp                                       |                 |       26               .init----------------------------
+                     r-xp                                       |                 |                             |        0 _init
+                     r-xp                                       |                 |      128                .plt----------------------------
+                     r-xp                                       |                 |      594               .text----------------------------
+                     r-xp                                       |                 |                             |        0 deregister_tm_clo
+                     r-xp                                       |                 |                             |        0 register_tm_clone
+                     r-xp                                       |                 |                             |        0 __do_global_dtors
+                     r-xp                                       |                 |                             |        0 frame_dummy
+                     r-xp                                       |                 |                             |        2 __libc_csu_fini
+                     r-xp                                       |                 |                             |      101 __libc_csu_init
+                     r-xp                                       |                 |                             |        0 _start
+                     r-xp                                       |                 |                             |      217 main
+                     r-xp                                       |                 |                             |       15 global_func
+                     r-xp                                       |                 |        9               .fini----------------------------
+                     r-xp                                       |                 |                             |        0 _fini
+                     r-xp                                       |                 |  4040096             .rodata----------------------------
+                     r-xp                                       |                 |                             |    40000 local_const_arr.2
+                     r-xp                                       |                 |                             |        4 _IO_stdin_used
+                     r-xp                                       |                 |                             |  4000000 global_const_arr
+                     r-xp                                       |                 |                             |        4 global_const_val
+                     r-xp                                       |                 |       60       .eh_frame_hdr----------------------------
+                     r-xp                                       |                 |      276           .eh_frame----------------------------
+                     r-xp                                       |                 |                             |        0 __FRAME_END__
+            10334208 r--p    4096 /tmp/SymbolMap/hello          ----------------------------------------------------------------------------
+                     r--p                                       |  8004752    LOAD----------------------------------------------------------
+                     r--p                                       |                 |        8         .init_array----------------------------
+                     r--p                                       |                 |                             |        0 __frame_dummy_ini
+                     r--p                                       |                 |                             |        0 __init_array_end
+                     r--p                                       |                 |                             |        0 __init_array_star
+                     r--p                                       |                 |        8         .fini_array----------------------------
+                     r--p                                       |                 |                             |        0 __do_global_dtors
+                     r--p                                       |                 |        8                .jcr----------------------------
+                     r--p                                       |                 |                             |        0 __JCR_LIST__
+                     r--p                                       |                 |                             |        0 __JCR_END__
+                     r--p                                       |      464 DYNAMIC----------------------------------------------------------
+                     r--p                                       |                 |      464            .dynamic----------------------------
+                     r--p                                       |                 |                             |        0 _DYNAMIC
+                     r--p                                       |                 |        8                .got----------------------------
+            10338304 rw-p    8192 /tmp/SymbolMap/hello          ----------------------------------------------------------------------------
+                     rw-p                                       |                 |       80            .got.plt----------------------------
+                     rw-p                                       |                 |                             |        0 _GLOBAL_OFFSET_TA
+                     rw-p                                       |                 |     4088               .data----------------------------
+                     rw-p                                       |                 |                             |       16 global_char_arr
+                     rw-p                                       |                 |                             |        0 data_start
+                     rw-p                                       |                 |                             |        0 _edata
+                     rw-p                                       |                 |                             |        4 global_val
+                     rw-p                                       |                 |                             |        8 global_char_p
+                     rw-p                                       |                 |                             |        0 __data_start
+                     rw-p                                       |                 |                             |     4000 global_arr
+                     rw-p                                       |                 |                             |        0 __dso_handle
+                     rw-p                                       |                 |                             |        0 __TMC_END__
+                     rw-p                                       |                 |  8000064                .bss----------------------------
+                     rw-p                                       |                 |                             |        1 completed.6973
+                     rw-p                                       |                 |                             |        4 global_empty_val
+                     rw-p                                       |                 |                             |        0 _end
+                     rw-p                                       |                 |                             |        0 __bss_start
+                     rw-p                                       |                 |                             |  8000000 global_empty_arr
             10346496 rw-p 7999488                               ----------------------------------------------------------------------------
-            33685504 rw-p  233472 [heap]                        ----------------------------------------------------------------------------
-     140507985293312 r-xp 1826816 /lib/x8...nux-gnu/libc-2.19.so----------------------------------------------------------------------------
-     140507987120128 ---p 2093056 /lib/x8...nux-gnu/libc-2.19.so----------------------------------------------------------------------------
-     140507989213184 r--p   16384 /lib/x8...nux-gnu/libc-2.19.so----------------------------------------------------------------------------
-     140507989229568 rw-p    8192 /lib/x8...nux-gnu/libc-2.19.so----------------------------------------------------------------------------
-     140507989237760 rw-p   20480                               ----------------------------------------------------------------------------
-     140507989258240 r-xp  143360 /lib/x8...linux-gnu/ld-2.19.so----------------------------------------------------------------------------
-     140507991375872 rw-p   12288                               ----------------------------------------------------------------------------
-     140507991486464 rw-p    8192                               ----------------------------------------------------------------------------
-     140507991494656 r--p    4096 /lib/x8...linux-gnu/ld-2.19.so----------------------------------------------------------------------------
-     140507991498752 rw-p    4096 /lib/x8...linux-gnu/ld-2.19.so----------------------------------------------------------------------------
-     140507991502848 rw-p    4096                               ----------------------------------------------------------------------------
-     140736442290176 rw-p 8011776 [stack]                       ----------------------------------------------------------------------------
-     140736450351104 r-xp    8192 [vdso]                        ----------------------------------------------------------------------------
+            28610560 rw-p  233472 [heap]                        ----------------------------------------------------------------------------
+     139658640916480 r-xp 1826816 /lib/x8...nux-gnu/libc-2.19.so----------------------------------------------------------------------------
+     139658642743296 ---p 2093056 /lib/x8...nux-gnu/libc-2.19.so----------------------------------------------------------------------------
+     139658644836352 r--p   16384 /lib/x8...nux-gnu/libc-2.19.so----------------------------------------------------------------------------
+     139658644852736 rw-p    8192 /lib/x8...nux-gnu/libc-2.19.so----------------------------------------------------------------------------
+     139658644860928 rw-p   20480                               ----------------------------------------------------------------------------
+     139658644881408 r-xp  143360 /lib/x8...linux-gnu/ld-2.19.so----------------------------------------------------------------------------
+     139658646999040 rw-p   12288                               ----------------------------------------------------------------------------
+     139658647109632 rw-p    8192                               ----------------------------------------------------------------------------
+     139658647117824 r--p    4096 /lib/x8...linux-gnu/ld-2.19.so----------------------------------------------------------------------------
+     139658647121920 rw-p    4096 /lib/x8...linux-gnu/ld-2.19.so----------------------------------------------------------------------------
+     139658647126016 rw-p    4096                               ----------------------------------------------------------------------------
+     140736645545984 rw-p 8007680 [stack]                       ----------------------------------------------------------------------------
+     140736653680640 r-xp    8192 [vdso]                        ----------------------------------------------------------------------------
 18446744073699065856 r-xp    4096 [vsyscall]                    ----------------------------------------------------------------------------

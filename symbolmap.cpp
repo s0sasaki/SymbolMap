@@ -31,8 +31,8 @@ void symbolmap(std::string mapsfilename, std::string elffilename){
     std::cout << 
 "                        Memory Maps                             |     Segment     |           Section           |           Symbol          \n" 
 "----------------------------------------------------------------|-----------------|-----------------------------|---------------------------\n" 
-"       Address       Perm   Size             PathName           | FileSize   Type | FileSize     SectionName    |         SymbolName        \n" 
-"-------------------- ---- ------- ------------------------------|--------- -------|--------- -------------------|---------------------------\n";
+"       Address       Perm   Size             PathName           | FileSize   Type | FileSize     SectionName    | FileSize     SymbolName   \n" 
+"-------------------- ---- ------- ------------------------------|--------- -------|--------- -------------------|--------- -----------------\n";
     for(int i=0; i<mapinfo_vec.size(); i++){
         mapname_short = static_cast<std::string>(mapinfo_vec[i].mapname);
         if (mapname_short.size() > 30)
@@ -52,11 +52,9 @@ void symbolmap(std::string mapsfilename, std::string elffilename){
             if(i==0 && program_header_vec[j].p_offset < mapinfo_vec[1].offset  ||
                i==1 && mapinfo_vec[1].offset <= program_header_vec[j].p_offset && program_header_vec[j].p_offset < mapinfo_vec[2].offset ||
                i==2 && mapinfo_vec[2].offset <= program_header_vec[j].p_offset) {
-                std::cout << std::setw(20) << std::right << " ";
+                std::cout << std::setw(20) << " ";
                 std::cout << std::setw(5)  << std::right << mapinfo_vec[i].perm;
-                std::cout << "         ";
-                std::cout << std::setw(30) << std::left  << mapname_short;
-                std::cout << "|";
+                std::cout << std::setw(39) << " " << "|";
                 std::cout << std::setw(9) << std::right << program_header_vec[j].p_memsz;
                 std::cout << ElfHelper::segmentType(program_header_vec[j]);
                 std::cout << "----------------------------------------------------------" << std::endl;
@@ -78,13 +76,10 @@ void symbolmap(std::string mapsfilename, std::string elffilename){
                    i==2 && mapinfo_vec[2].offset          <= section_header_vec[k].sh_offset 
                         && program_header_vec[j].p_offset <= section_header_vec[k].sh_offset
                         && ElfHelper::segmentType(program_header_vec[j+1]) == " DYNAMIC" ){
-                    std::cout << std::setw(20) << std::right << " ";
+                    std::cout << std::setw(20) << " ";
                     std::cout << std::setw(5)  << std::right << mapinfo_vec[i].perm;
-                    std::cout << "         ";
-                    std::cout << std::setw(30) << std::left  << mapname_short;
-                    std::cout << "|         ";
-                    std::cout << ElfHelper::segmentType(program_header_vec[j]);
-                    std::cout << "|";
+                    std::cout << std::setw(39) << " " << "|";
+                    std::cout << std::setw(17) << " " << "|";
                     std::cout << std::setw(9) << std::right << section_header_vec[k].sh_size;
                     std::cout << std::setw(20)  << std::right << elf.readSectionname(section_header_vec[k]);
                     std::cout << "----------------------------" << std::endl;
@@ -93,14 +88,11 @@ void symbolmap(std::string mapsfilename, std::string elffilename){
                             continue;
                         if(elf.readSymbolname(m) == "")
                             continue;
-                        std::cout << std::setw(20) << std::right << " ";
+                        std::cout << std::setw(20) << " ";
                         std::cout << std::setw(5)  << std::right << mapinfo_vec[i].perm;
-                        std::cout << "         ";
-                        std::cout << std::setw(30) << std::left  << mapname_short;
-                        std::cout << "|         ";
-                        std::cout << ElfHelper::segmentType(program_header_vec[j]);
-                        std::cout << "|";
-                        std::cout << std::setw(30) << std::right << "|";
+                        std::cout << std::setw(39) << " " << "|";
+                        std::cout << std::setw(17) << " " << "|";
+                        std::cout << std::setw(29) << " " << "|";
                         std::cout << std::setw(9)  << std::right << m.st_size;
                         std::cout << " ";
                         std::string symbolname_short = elf.readSymbolname(m);
