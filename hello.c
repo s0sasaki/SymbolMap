@@ -23,8 +23,6 @@ int main(){
     char  local_char_arr[] = "local_char_arr";
     char *local_char_p     = "local_char_p";
     int *local_heap;
-    //local_val = global_func(global_val);
-    //global_empty_arr[0] = 3;
     local_heap = malloc(100000);
     sleep(10000);
     free(local_heap);
