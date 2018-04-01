@@ -3,13 +3,15 @@
 
 SymbolMap scans symbols, sections, and segments in an ELF file and lists them with its process memory map.
 
+See hello.c and its result at hello.symbolmap_result.txt for example.
+
+
 # Usage
 
 Run an ELF file and execute symbolmap like this:
 
 ./symbolmap [ELFFILE] [PID]
 
-See hello.c and its result at hello.symbolmap_result.txt for example.
 
 # References
 
